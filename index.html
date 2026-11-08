@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,19 +95,17 @@
                 fitness, sleep and everyday wellbeing.
             </p>
 
-            <!-- EXPLORE ARTICLES BUTTON:
-                 opens the Monetag link in a new tab AND scrolls to the articles -->
-           <div class="hero-buttons">
+            <!-- EXPLORE BUTTON: MONETAG LINK ONLY -->
+            <div class="hero-buttons">
 
-    <a class="primary-link"
-       id="exploreBtn"
-       href="https://uplcm.com/4/12216414"
-       target="_blank"
-       rel="nofollow sponsored noopener">
-        Explore articles <span>→</span>
-    </a>
+                <a class="primary-link"
+                   href="https://uplcm.com/4/12216414"
+                   target="_blank"
+                   rel="nofollow sponsored noopener">
+                    Explore articles <span>→</span>
+                </a>
 
-</div>
+            </div>
 
         </div>
 
@@ -220,29 +219,6 @@
 <!-- JAVASCRIPT FILES -->
 <script src="articles.js"></script>
 <script src="main.js"></script>
-
-<!-- EXPLORE ARTICLES BUTTON FIX -->
-<script>
-(function () {
-    var MONETAG_LINK = 'https://uplcm.com/4/12216414';
-    var btn = document.getElementById('exploreBtn');
-
-    if (!btn) return;
-
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        // Open the Monetag link in a new tab
-        window.open(MONETAG_LINK, '_blank', 'noopener');
-
-        // Scroll to the articles section on this page
-        var target = document.getElementById('articles');
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
-})();
-</script>
 
 </body>
 </html>
